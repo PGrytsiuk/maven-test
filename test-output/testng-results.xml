@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Response is: {"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":300,"main":"Drizzle","description":"light intensity drizzle","icon":"09d"}],"base":"stations","main":{"temp":280.32,"pressure":1012,"humidity":81,"temp_min":279.15,"temp_max":281.15},"visibility":10000,"wind":{"speed":4.1,"deg":80},"clouds":{"all":90},"dt":1485789600,"sys":{"type":1,"id":5091,"message":0.0103,"country":"GB","sunrise":1485762037,"sunset":1485794875},"id":2643743,"name":"London","cod":200}]]>
+    </line>
+    <line>
+      <![CDATA[Verified the Status code seccesfuly: ]]>
+    </line>
+    <line>
+      <![CDATA[Country code has verified successfulyy: ]]>
+    </line>
+    <line>
+      <![CDATA[City code has verified successfulyy: ]]>
+    </line>
+    <line>
+      <![CDATA[Response is: {"coord":{"lon":77.22,"lat":28.65},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":301.17,"pressure":1009,"humidity":54,"temp_min":300.15,"temp_max":302.04},"visibility":3000,"wind":{"speed":2.51,"deg":340},"clouds":{"all":0},"dt":1571836704,"sys":{"type":1,"id":9161,"country":"IN","sunrise":1571792184,"sunset":1571832861},"timezone":19800,"id":1273294,"name":"Delhi","cod":200}]]>
+    </line>
+    <line>
+      <![CDATA[Verified the Status code seccesfuly: ]]>
+    </line>
+    <line>
+      <![CDATA[Country code has verified successfulyy: ]]>
+    </line>
+    <line>
+      <![CDATA[City code has verified successfulyy: ]]>
+    </line>
+    <line>
+      <![CDATA[Response is: {"cod":"404","message":"city not found"}]]>
+    </line>
+    <line>
+      <![CDATA[Verified the error message successfully]]>
+    </line>
+    <line>
+      <![CDATA[Response is: {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}]]>
+    </line>
+    <line>
+      <![CDATA[Verified the error message successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5433" started-at="2019-10-23T13:18:21Z" finished-at="2019-10-23T13:18:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5433" started-at="2019-10-23T13:18:21Z" finished-at="2019-10-23T13:18:27Z">
+      <class name="sysla.Sysla">
+        <test-method status="PASS" signature="tesеWeather()[pri:-1, instance:sysla.Sysla@271053e1]" name="tesеWeather" duration-ms="3237" started-at="2019-10-23T13:18:21Z" finished-at="2019-10-23T13:18:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Response is: {"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":300,"main":"Drizzle","description":"light intensity drizzle","icon":"09d"}],"base":"stations","main":{"temp":280.32,"pressure":1012,"humidity":81,"temp_min":279.15,"temp_max":281.15},"visibility":10000,"wind":{"speed":4.1,"deg":80},"clouds":{"all":90},"dt":1485789600,"sys":{"type":1,"id":5091,"message":0.0103,"country":"GB","sunrise":1485762037,"sunset":1485794875},"id":2643743,"name":"London","cod":200}]]>
+            </line>
+            <line>
+              <![CDATA[Verified the Status code seccesfuly: ]]>
+            </line>
+            <line>
+              <![CDATA[Country code has verified successfulyy: ]]>
+            </line>
+            <line>
+              <![CDATA[City code has verified successfulyy: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tesеWeather -->
+        <test-method status="PASS" signature="getWeatherInfoOfDelhiWithValidData()[pri:0, instance:sysla.Sysla@271053e1]" name="getWeatherInfoOfDelhiWithValidData" duration-ms="317" started-at="2019-10-23T13:18:24Z" finished-at="2019-10-23T13:18:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Response is: {"coord":{"lon":77.22,"lat":28.65},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":301.17,"pressure":1009,"humidity":54,"temp_min":300.15,"temp_max":302.04},"visibility":3000,"wind":{"speed":2.51,"deg":340},"clouds":{"all":0},"dt":1571836704,"sys":{"type":1,"id":9161,"country":"IN","sunrise":1571792184,"sunset":1571832861},"timezone":19800,"id":1273294,"name":"Delhi","cod":200}]]>
+            </line>
+            <line>
+              <![CDATA[Verified the Status code seccesfuly: ]]>
+            </line>
+            <line>
+              <![CDATA[Country code has verified successfulyy: ]]>
+            </line>
+            <line>
+              <![CDATA[City code has verified successfulyy: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getWeatherInfoOfDelhiWithValidData -->
+        <test-method status="PASS" signature="getWeatherInfoOfLondonWithInValidData1()[pri:0, instance:sysla.Sysla@271053e1]" name="getWeatherInfoOfLondonWithInValidData1" duration-ms="169" started-at="2019-10-23T13:18:25Z" finished-at="2019-10-23T13:18:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Response is: {"cod":"404","message":"city not found"}]]>
+            </line>
+            <line>
+              <![CDATA[Verified the error message successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getWeatherInfoOfLondonWithInValidData1 -->
+        <test-method status="PASS" signature="getWeatherInfoOfLondonWithInValidData2()[pri:0, instance:sysla.Sysla@271053e1]" name="getWeatherInfoOfLondonWithInValidData2" duration-ms="112" started-at="2019-10-23T13:18:25Z" finished-at="2019-10-23T13:18:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Response is: {"cod":401, "message": "Invalid API key. Please see http://openweathermap.org/faq#error401 for more info."}]]>
+            </line>
+            <line>
+              <![CDATA[Verified the error message successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getWeatherInfoOfLondonWithInValidData2 -->
+        <test-method status="PASS" signature="testResponsecode()[pri:0, instance:sysla.Sysla@271053e1]" name="testResponsecode" duration-ms="1107" started-at="2019-10-23T13:18:25Z" finished-at="2019-10-23T13:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponsecode -->
+        <test-method status="PASS" signature="testbody()[pri:0, instance:sysla.Sysla@271053e1]" name="testbody" duration-ms="441" started-at="2019-10-23T13:18:26Z" finished-at="2019-10-23T13:18:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testbody -->
+      </class> <!-- sysla.Sysla -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
